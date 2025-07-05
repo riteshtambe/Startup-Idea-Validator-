@@ -1,0 +1,4 @@
+streamlit
+fpdf
+requests
+python-dotenv
