@@ -2,13 +2,22 @@ from utils.model_utils import call_llm
 
 def generate_competitors(idea):
     prompt = f"""
-Identify 3 notable competitors or similar startups for the following idea:
+You are a startup analyst. Identify **3 real or well-known** startups or companies that are similar to this idea:
 
 \"\"\"{idea}\"\"\"
 
-For each, provide:
-- Name
-- What they do
-- How they are different
+Provide the response in this format:
+
+1. **[Startup Name]**  
+   - What they do: ...  
+   - Difference from our idea: ...
+
+2. **[Startup Name]**  
+   - What they do: ...  
+   - Difference from our idea: ...
+
+3. **[Startup Name]**  
+   - What they do: ...  
+   - Difference from our idea: ...
 """
     return call_llm(prompt)

@@ -2,3 +2,6 @@ streamlit
 fpdf
 requests
 python-dotenv
+google-generativeai
+transformers
+sentencepiece
